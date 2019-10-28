@@ -1,9 +1,5 @@
 import BlackJack from 'blackjack-dealer-logic'
 
-
-
-
-
 export default () => {
     
     // // DOM variables
@@ -22,28 +18,39 @@ export default () => {
           bust = document.getElementById('bust'),
           outcome = document.getElementById('outcome'),
           history = document.getElementById('history'),
-          reset = document.getElementById()
-          
-          ;
-
-    var gameHistory = [];
-    var userNameInput = window.prompt("What's your name?")
-    
+          resetButton = document.getElementById('reset-button')
+         ;
+    // // State Variables
+    var /*gameState = null,*/
+        gameHistory = [],
+        userNameInput;
         
-
-    doubbleButton.style.display = 'none';
-    hitButton.style.display = 'none';
-    stayButton.style.display = 'none';
-
-    
-    newGameButton.addEventListener('click', function() {
-        gameOver = false;
-        playerWon = false;
+        doubbleButton.style.display = 'none';
+        hitButton.style.display = 'none';
+        stayButton.style.display = 'none';
+        resetButton.style.display = 'none';
         
         
-        newGameButton.style.display = 'none';
-        doubbleButton.style.display = 'inline';
-        hitButton.style.display = 'inline';
-        stayButton.style.display = 'inline';
-      });
+        newGameButton.addEventListener('click', function() {
+            
+            // if (gameState === null) {
+                // gameState = true;
+                userNameInput = window.prompt("Enter Your Name");
+            //}
+            // else {
+            //     game = new BlackJack.singleDeckGame;
+            //     result = new BlackJack.Result;
+            
+            userName.innerText = userNameInput;
+            doubbleButton.style.display = 'inline';
+            hitButton.style.display = 'inline';
+            stayButton.style.display = 'inline';
+            resetButton.style.display = 'inline';
+        });
+
+
+        
+        
+        //newGameButton.style.display = 'none';
+        // });
 }
