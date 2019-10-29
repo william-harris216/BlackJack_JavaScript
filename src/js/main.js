@@ -15,8 +15,6 @@ export default () => {
           userChipCount = document.getElementById('user-chip-count'),
           userWager = document.getElementById('view-user-wager'),
           dealer = document.getElementById("dealer"),
-          bust = document.getElementById('bust'),
-          outcome = document.getElementById('outcome'),
           History = document.getElementById('game-history'),
           resetButton = document.getElementById('reset-button');
     let gameHistory = [],
@@ -176,7 +174,7 @@ export default () => {
         hitButton.style.display = 'none';
         stayButton.style.display = 'none';
         statsDisplay.innerHTML = 'block';
-        statsDisplay.innerHTML = 'Start New Wager of Reset The Game';
+        statsDisplay.innerHTML = 'Start New Wager or Reset The Game';
     }
 
     function showDeckScreen() {
@@ -188,7 +186,7 @@ export default () => {
         hitButton.style.display = 'inline';
         stayButton.style.display = 'inline';
         resetButton.style.display = 'inline';
-        statsDisplay.innerHTML = 'none';
+        //statsDisplay.innerHTML = 'none';
 
     }
 }
