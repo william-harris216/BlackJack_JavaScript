@@ -174,7 +174,7 @@ export default () => {
         hitButton.style.display = 'none';
         stayButton.style.display = 'none';
         statsDisplay.innerHTML = 'block';
-        statsDisplay.innerHTML = 'Start New Wager or Reset The Game';
+        statsDisplay.innerHTML = '\n\n\nStart New Wager or Reset The Game';
     }
 
     function showDeckScreen() {
